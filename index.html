@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesa Cake — Gâteaux faits maison sur mesure, Québec</title>
+  <meta name="description"
+    content="Gâteaux d'anniversaire et gâteaux sur mesure, faits maison avec amour à Québec. Demandez votre devis sur WhatsApp.">
+  <meta name="theme-color" content="#2b1a15">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Albert+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="accueil">
+    <div class="nav">
+      <a href="#accueil" class="brand">
+        <img src="logo.png" alt="Sesa Cake">
+        <span class="logo-word">Sesa Cake</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#accueil">Accueil</a>
+        <a href="#occasions">Occasions</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#commander" class="nav-cta mobile-only">Commander</a>
+      </nav>
+      <a href="#commander" class="nav-cta desktop-only">Commander</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+
+    <div class="wrap hero-content">
+      <span class="eyebrow">Gâteaux faits maison, sur mesure</span>
+      <h1>Des gâteaux qui rendent <em>chaque fête</em> inoubliable</h1>
+      <p class="lede">Anniversaires, baby showers, mariages, fiançailles... chaque gâteau est fait à la main, avec
+        des produits frais, à Québec.</p>
+      <div class="hero-actions">
+        <a href="#commander" class="btn btn-primary">Demander un devis</a>
+        <a href="#galerie" class="btn btn-light">Voir la galerie</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>100%</strong><span>fait main</span></li>
+        <li><strong>8</strong><span>saveurs</span></li>
+        <li><strong>Dès 45 $</strong><span>sur devis</span></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- OCCASIONS -->
+  <section id="occasions" class="occasions">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Pour chaque événement</span>
+        <h2>Quelle est l'occasion ?</h2>
+        <p>Choisissez votre événement pour voir des réalisations ou commander directement.</p>
+      </div>
+      <div class="event-grid">
+        <article class="event-card" style="--accent:#e0373f">
+          <img src="images/gateau-anniversaire-macarons.jpg" alt="Gâteau d'anniversaire" loading="lazy">
+          <div class="event-body">
+            <span class="event-tag">🎂 Anniversaire</span>
+            <h3>Anniversaire adulte</h3>
+            <p>Drip, macarons, chiffres dorés, élégant ou fun.</p>
+            <div class="event-actions">
+              <button class="chip" data-goto-filter="anniversaire">Voir</button>
+              <button class="chip chip-solid" data-goto-order="Anniversaire">Commander</button>
+            </div>
+          </div>
+        </article>
+        <article class="event-card" style="--accent:#3a9bc4">
+          <img src="images/gateau-enfant-bluey-etages.jpg" alt="Gâteau d'anniversaire enfant" loading="lazy">
+          <div class="event-body">
+            <span class="event-tag">🎈 Enfant</span>
+            <h3>Anniversaire enfant</h3>
+            <p>Personnages, thèmes préférés, couleurs vives.</p>
+            <div class="event-actions">
+              <button class="chip" data-goto-filter="enfant">Voir</button>
+              <button class="chip chip-solid" data-goto-order="Anniversaire enfant">Commander</button>
+            </div>
+          </div>
+        </article>
+        <article class="event-card" style="--accent:#c79a3b">
+          <img src="images/gateau-mariage-fleurs.jpg" alt="Gâteau de mariage" loading="lazy">
+          <div class="event-body">
+            <span class="event-tag">💍 Mariage</span>
+            <h3>Mariage &amp; fiançailles</h3>
+            <p>Pièces à étages, fleurs, finitions raffinées.</p>
+            <div class="event-actions">
+              <button class="chip" data-goto-filter="mariage">Voir</button>
+              <button class="chip chip-solid" data-goto-order="Mariage / Fiançailles">Commander</button>
+            </div>
+          </div>
+        </article>
+        <article class="event-card" style="--accent:#e2799a">
+          <img src="images/gateau-babyshower-genre.jpg" alt="Gâteau baby shower" loading="lazy">
+          <div class="event-body">
+            <span class="event-tag">🍼 Baby shower</span>
+            <h3>Baby shower &amp; gender reveal</h3>
+            <p>Surprise rose ou bleu cachée à l'intérieur.</p>
+            <div class="event-actions">
+              <button class="chip" data-goto-filter="babyshower">Voir</button>
+              <button class="chip chip-solid" data-goto-order="Baby shower / Gender">Commander</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section id="apropos" class="about">
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">Mon histoire</span>
+        <h2>Une passion devenue métier</h2>
+        <p>Tout a commencé par des gâteaux d'anniversaire faits pour mes proches. Aujourd'hui, je mets tout mon cœur à
+          créer des pièces uniques, pensées pour chaque client et chaque occasion.</p>
+        <p>Chaque gâteau est préparé à la main, avec des ingrédients frais et de qualité, dans le respect des délais et
+          avec un vrai souci du détail.</p>
+      </div>
+      <div class="values">
+        <div class="value-card"><span class="v-icon">✨</span>
+          <h3>Qualité</h3>
+          <p>Des recettes travaillées et des finitions soignées.</p>
+        </div>
+        <div class="value-card"><span class="v-icon">🍓</span>
+          <h3>Produits frais</h3>
+          <p>Des ingrédients sélectionnés avec soin.</p>
+        </div>
+        <div class="value-card"><span class="v-icon">🤲</span>
+          <h3>Fait main</h3>
+          <p>Fabrication artisanale, aucune pièce industrielle.</p>
+        </div>
+        <div class="value-card"><span class="v-icon">🎨</span>
+          <h3>Sur mesure</h3>
+          <p>Chaque gâteau est pensé pour vous.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Réalisations</span>
+        <h2>La galerie</h2>
+        <p>Un aperçu de quelques créations. Touchez une photo pour l'agrandir.</p>
+      </div>
+      <div class="filters" role="tablist">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="anniversaire">Anniversaire</button>
+        <button class="filter-btn" data-filter="enfant">Enfant</button>
+        <button class="filter-btn" data-filter="mariage">Mariage</button>
+        <button class="filter-btn" data-filter="babyshower">Baby shower</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-macarons.jpg"
+            alt="Gâteau anniversaire drip rose et macarons" loading="lazy"><figcaption>Drip rose &amp; macarons</figcaption></figure>
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-noir-or.jpg"
+            alt="Gâteau deux étages noir et or" loading="lazy"><figcaption>Élégant noir &amp; or</figcaption></figure>
+        <figure class="g-item" data-cat="mariage"><img src="images/gateau-mariage-fleurs.jpg"
+            alt="Gâteau de mariage ivoire et fleurs" loading="lazy"><figcaption>Mariage ivoire &amp; fleurs</figcaption></figure>
+        <figure class="g-item" data-cat="babyshower"><img src="images/gateau-babyshower-genre.jpg"
+            alt="Gâteau gender reveal ourson bleu et rose" loading="lazy"><figcaption>Gender reveal</figcaption></figure>
+        <figure class="g-item" data-cat="enfant"><img src="images/gateau-enfant-bluey-etages.jpg"
+            alt="Gâteau anniversaire enfant Bluey deux étages" loading="lazy"><figcaption>Enfant — Bluey</figcaption></figure>
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-baies.jpg"
+            alt="Gâteau anniversaire fruits rouges" loading="lazy"><figcaption>Fruits rouges</figcaption></figure>
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-chocolat-cerises.jpg"
+            alt="Gâteau chocolat et cerises" loading="lazy"><figcaption>Chocolat &amp; cerises</figcaption></figure>
+        <figure class="g-item" data-cat="enfant"><img src="images/gateau-enfant-kpop.jpg"
+            alt="Gâteau anniversaire enfant thème K-pop" loading="lazy"><figcaption>Enfant — thème K-pop</figcaption></figure>
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-vodka.jpg"
+            alt="Gâteau drip bleu et blanc" loading="lazy"><figcaption>Drip bleu</figcaption></figure>
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-argent.jpg"
+            alt="Gâteau anniversaire thème doré" loading="lazy"><figcaption>Doré &amp; argent</figcaption></figure>
+        <figure class="g-item" data-cat="enfant"><img src="images/gateau-enfant-bluey-rose.jpg"
+            alt="Gâteau anniversaire enfant Bluey rose" loading="lazy"><figcaption>Enfant — Bluey rose</figcaption></figure>
+        <figure class="g-item" data-cat="anniversaire"><img src="images/gateau-anniversaire-coeur-rouge.jpg"
+            alt="Gâteau coeur rouge birthday girl" loading="lazy"><figcaption>Cœur rouge</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMANDER -->
+  <section class="order" id="commander">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Devis gratuit</span>
+        <h2>Commander un gâteau</h2>
+        <p>Remplissez le formulaire : votre demande s'ouvre directement dans <strong>WhatsApp</strong>, il ne reste
+          qu'à appuyer sur « Envoyer ».</p>
+      </div>
+      <form id="orderForm" class="order-card" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="nom">Nom complet *</label><input id="nom" name="nom" type="text"
+              placeholder="Votre nom" autocomplete="name" required></div>
+          <div class="field"><label for="tel">Téléphone *</label><input id="tel" name="tel" type="tel"
+              placeholder="418-000-0000" autocomplete="tel" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="evenement">Type d'événement</label>
+            <select id="evenement" name="evenement">
+              <option>Anniversaire</option>
+              <option>Anniversaire enfant</option>
+              <option>Mariage / Fiançailles</option>
+              <option>Baby shower / Gender reveal</option>
+              <option>Communion / Baptême</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field"><label for="date">Date de l'événement *</label><input id="date" name="date" type="date"
+              required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="heure">Heure de récupération</label><input id="heure" name="heure"
+              type="time"></div>
+          <div class="field"><label for="personnes">Nombre de personnes</label><input id="personnes" name="personnes"
+              type="number" min="1" inputmode="numeric" placeholder="20"></div>
+        </div>
+        <div class="field full">
+          <label>Saveur du gâteau</label>
+          <div class="flavors" id="flavors">
+            <label class="flavor"><input type="radio" name="saveur" value="Vanille" checked><span>Vanille</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Chocolat"><span>Chocolat</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Pistache"><span>Pistache</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Caramel"><span>Caramel</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Fraise"><span>Fraise</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Framboise"><span>Framboise</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Biscoff"><span>Biscoff</span></label>
+            <label class="flavor"><input type="radio" name="saveur" value="Autre"><span>Autre</span></label>
+          </div>
+        </div>
+        <div class="field full"><label for="commentaires">Commentaires / inspirations</label><textarea
+            id="commentaires" name="commentaires" placeholder="Décrivez votre idée, thème, couleurs, allergies..."></textarea>
+        </div>
+        <p class="form-error" id="formError" role="alert"></p>
+        <button type="submit" class="form-submit">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa-icon" /></svg>
+          Envoyer ma demande sur WhatsApp
+        </button>
+        <p class="form-note">Commandez au moins 48h à l'avance. Réponse rapide sur WhatsApp au +1 (367) 330-0495.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="tarifs">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Prix</span>
+        <h2>Tarifs</h2>
+      </div>
+      <div class="price-lead">
+        <span class="eyebrow">À partir de</span>
+        <div class="amount">45 $</div>
+        <p>Le prix final dépend de la taille et de la décoration choisies. Un devis précis est établi après votre
+          demande.</p>
+        <a href="#commander" class="btn btn-primary">Obtenir mon devis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS -->
+  <section id="avis" class="reviews">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Témoignages</span>
+        <h2>Avis clients</h2>
+      </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>« Le gâteau était magnifique et absolument délicieux. Exactement ce que j'avais imaginé ! »</p>
+          <div class="review-name">Sarah M.</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>« Service rapide, à l'écoute, et un résultat qui a fait sensation à la fête. »</p>
+          <div class="review-name">Karim B.</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>« Très professionnelle, gâteau livré à l'heure et vraiment délicieux. Je recommande ! »</p>
+          <div class="review-name">Julie R.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Questions</span>
+        <h2>Questions fréquentes</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q">Combien de temps à l'avance dois-je commander ? <span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>Comptez 24 à 48h à l'avance pour la plupart des commandes.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Comment conserver mon gâteau ? <span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>Conservez le gâteau au réfrigérateur et sortez-le environ 30 minutes avant de le servir pour un meilleur
+              goût.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Puis-je personnaliser totalement le gâteau ? <span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>Oui, chaque gâteau est réalisé sur mesure selon vos envies : couleurs, saveurs, décorations et thème.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Livrez-vous les gâteaux ? <span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>La livraison est possible dans la région de Québec. Le prix est calculé selon la distance.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Quels sont les modes de paiement acceptés ? <span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>Espèces, virement Interac et paiement mobile sont acceptés. Un acompte est demandé pour valider la
+              commande.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Restons en contact</h2>
+        <ul class="contact-info">
+          <li><span class="icon">WhatsApp</span><a href="https://wa.me/13673300495" target="_blank" rel="noopener">+1 (367) 330-0495</a></li>
+          <li><span class="icon">Téléphone</span><a href="tel:+13673300495">367-330-0495</a></li>
+          <li><span class="icon">Adresse</span><span>Québec, QC, Canada</span></li>
+          <li><span class="icon">Horaires</span><span>Lun–Sam, 9h–19h (sur rendez-vous)</span></li>
+        </ul>
+        <div class="hero-actions">
+          <a href="https://wa.me/13673300495" target="_blank" rel="noopener" class="btn btn-wa">Écrire sur WhatsApp</a>
+          <a href="#" class="btn btn-ghost">Instagram</a>
+        </div>
+      </div>
+      <iframe class="map-frame" loading="lazy" title="Carte Québec"
+        src="https://www.google.com/maps?q=Quebec+City,QC,Canada&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <img src="logo.png" alt="">
+            <span class="logo-word">Sesa Cake</span>
+          </div>
+          <p>Gâteaux faits maison, sur mesure, pour toutes vos occasions. Québec, QC, Canada.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#occasions">Occasions</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suivez-nous</h4>
+          <ul class="footer-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="https://wa.me/13673300495" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Sesa Cake — Tous droits réservés.</span>
+        <a href="#accueil">Haut de page ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Fermer">×</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Précédente">‹</button>
+    <figure>
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Suivante">›</button>
+  </div>
+
+  <a class="float-wa" href="https://wa.me/13673300495" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa-icon" /></svg>
+  </a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="wa-icon" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z" />
+    </symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
